@@ -1,0 +1,56 @@
+.btn-big {
+	font-size:      12px;
+	font-family:    $font;
+	//		border:         2px solid $white;
+	color:          $white;
+	text-transform: uppercase;
+	padding:        16px 56px;
+	margin-top:     8px;
+	@include transition(all .4s);
+	position:       relative;
+	display:        inline-block;
+	@include box-sizing(border-box);
+
+	&:before, &:after {
+		content:       '';
+		display:       block;
+		position:      absolute;
+		height:        100%;
+		width:         100%;
+		@include box-sizing(border-box);
+		top:           0;
+		border-top:    2px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
+		@include transition(all .4s);
+	}
+	&:before {
+		border-left: 2px solid #ffffff;
+		left:        -2px;
+	}
+	&:after {
+		border-right: 2px solid #ffffff;
+		right:        0;
+	}
+
+	&:hover {
+
+		color: #C31F49;
+		&:before, &:after {
+			border-color: #C31F49;
+			width:        25%;
+		}
+
+	}
+}
+
+.icon-map {
+	display:       block;
+	margin-bottom: 6px;
+	height:        24px;
+	&:before {
+		@extend %before;
+		background-position: -163px -39px;
+		width:               20px;
+		height:              100%;
+	}
+}

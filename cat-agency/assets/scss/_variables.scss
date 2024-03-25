@@ -1,0 +1,81 @@
+$white: #fff;
+$nearblack: #0F202E;
+//$headermargin: -60px;
+$blue: #0F1F2D;
+$sprite: url(../img/sprite.png) no-repeat;
+$time:.3s;
+
+$fontLight: "ProximaLight", sans-serif;
+$font: "ProximaReg", sans-serif;
+$fontBold: "ProximaBold", sans-serif;
+
+%clear {
+
+	&:after {
+		content: "";
+		display: table;
+		clear:   both;
+	}
+}
+
+::-moz-selection {
+	background:  #DE2C58;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	color:       $white;
+}
+
+::selection {
+	background:  #DE2C58;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	color:       $white;
+}
+
+.max-width {
+	width: 100%;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.max-width {
+	width: 100%;
+}
+
+.disp-none {
+	display: none;
+}
+
+body {
+	font-family:             $font;
+	font-size:               .900em;
+//	overflow-x: hidden;
+	color:                   $nearblack;
+	-webkit-background-size: cover;
+	-moz-background-size:    cover;
+	-o-background-size:      cover;
+	background-size:         cover;
+	position: relative;
+	-webkit-font-smoothing: antialiased!important;
+	text-rendering: optimizeLegibility!important;
+}
+
+a {
+	text-decoration: none;
+	outline:         none !important;
+}
+
+button {
+	display:        inline-block;
+	cursor:         pointer;
+	border:         none;
+	vertical-align: middle;
+	padding:        0;
+	background:     transparent;
+	outline:        none;
+}
+

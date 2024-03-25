@@ -1,0 +1,205 @@
+header {
+//	background: #402137;
+//	padding:    0px 0 76px;
+
+	.btn {
+		background:     transparent;
+		outline:        none;
+		color:          $white;
+		text-transform: uppercase;
+		margin-top:     20px;
+		font-size:      11px;
+		&:after {
+			content:             "";
+			background:          $sprite;
+			width:               10px;
+			height:              10px;
+			display:             inline-block;
+			background-position: -1px -20px;
+			position:            relative;
+			top:                 2px;
+			left:                2px;
+		}
+	}
+	.container {
+		width:  1000px;
+		margin: 0 auto;
+	}
+}
+
+.top-menu {
+	//	margin:19px 107px 0 0;
+	margin: 19px 0px 0 0;
+	li {
+		float:        left;
+		margin-right: 35px;
+		padding:      1px 0;
+		position:     relative;
+		&:before {
+			content:    "";
+			background: #C31F49;
+			width:      0;
+			transition: width .3s;
+			height:     2px;
+			left:       0;
+			bottom:     -2px;
+			position:   absolute;
+		}
+
+		&.current-menu-item,
+		&:hover {
+			//			border-bottom:2px solid #C31F49;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	a {
+		color:          $white;
+		text-transform: uppercase;
+		font-size:      12px;
+		font-family:    $fontBold;
+	}
+}
+
+.top-box {
+	@extend %clear;
+//	margin-right: $headermargin;
+	padding-top: 48px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+}
+
+.lang {
+	display:  none;
+	position: absolute;
+	right:    5px;
+	top:      40px;
+
+	&.active {
+		display: block;
+	}
+	span {
+		color:          $white;
+		text-transform: uppercase;
+		font-size:      10px;
+		display:        block;
+		padding:        5px 0;
+		cursor:         pointer;
+	}
+}
+
+.slider {
+//	margin-top:   54px;
+	overflow:     hidden;
+	@extend %clear;
+//	margin-right: $headermargin;
+	outline:      none;
+	position:     relative;
+	cursor:       pointer;
+//	opacity:0;
+//	height: 0;
+
+
+}
+header.navbar{
+//	height: 0;
+	overflow: hidden;
+	@include opacity(0);
+}
+
+.slick-slide {
+	padding-top: 150px;
+	padding-bottom: 76px;
+	@include box-sizing(border-box);
+	min-height: 600px;
+	height: 100vh;
+	position: relative;
+	float:               left;
+	outline:             none;
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select:    none; /* Firefox all */
+	-ms-user-select:     none; /* IE 10+ */
+
+	.container{
+		width: 1005px;
+		@extend %cam;
+	}
+	p {
+		float:       left;
+		font-size:   55px;
+		font-family: $fontLight;
+		color:       $white;
+		margin-top:  91px;
+		span {
+			font-family: $fontBold;
+		}
+	}
+	img {
+		float:        right;
+		margin-right: 20px;
+	}
+}
+
+.slick-dots {
+	display:  block;
+	position: absolute;
+	bottom:   110px;
+	left: 50%;
+	margin-left: -505px;
+	button {
+		font-size:     0;
+		width:         7px;
+		height:        7px;
+		border-radius: 50%;
+		background:    $white;
+		padding:       0;
+		position: relative;
+		outline:       none;
+		@extend %bvh;
+		@include transition(all $time);
+		&:before{
+			@extend %before;
+			@extend %cam;
+			@include transition(all $time);
+			width: 0;
+			height: 0;
+			border:     2px solid #AB163D;
+			@include opacity(0);
+			@include border-radius(50%);
+			@extend %bvh;
+
+		}
+		&:hover{
+			background: transparent;
+			&:before{
+				width: 10px;
+				height: 10px;
+				@include opacity(1);
+			}
+		}
+	}
+	li {
+		float:  left;
+		margin: 0 33px 0 8px;
+		&.slick-active button {
+//			width:      14px;
+//			height:     14px;
+			background: transparent;
+			&:before{
+				width: 10px;
+				height: 10px;
+				@include opacity(1);
+			}
+		}
+	}
+}
+
+
+
+
+
+

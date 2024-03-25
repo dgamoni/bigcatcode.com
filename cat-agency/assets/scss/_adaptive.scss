@@ -1,0 +1,218 @@
+body{
+	min-width: 1200px;
+}
+
+@media only screen and ( max-width: 1200px ){
+	.float-head {
+		.white-bg{
+			left: 0;
+			margin-left: 0;
+		}
+	}
+}
+//
+///*  TABLET  : 1024px */
+//@media only screen and ( max-width: 1200px ) {
+//	body {
+//		min-width: 100%;
+//		width: 100%;
+//		// background: coral;
+//	}
+//	header {
+//		.container {
+//			width: 100%;
+//		}
+//	}
+//	.wrap {
+//		width: 100%;
+//	}
+//	.wrapper {
+//		width: 100%;
+//		padding: 0 20px;
+//		@include box-sizing(border-box);
+//	}
+//	.top-box {
+//		margin-right: 0;
+//		padding-left: 20px;
+//	}
+//	.intro .wrapper,
+//	.slider {
+//		width: 100%;
+//	}
+//	.contact {
+//		li {
+//			margin-right: 80px;
+//		}
+//	}
+//}
+//
+//@media only screen and ( max-width: 1024px ) {
+//	.contact {
+//		li {
+//			margin-right: 50px;
+//		}
+//	}
+//}
+//
+///* TABLET  : 768px */
+//@media only screen and (max-width: 985px) {
+//	.works {
+//		.work-box {
+//			.work-item {
+//				height: 240px;
+//				.work-fon {
+//					display: block;
+//				}
+//			}
+//		}
+//	}
+//	.mess {
+//		text-align: center;
+//		.fl,
+//		.fr {
+//			float: none;
+//		}
+//		.btn-big {
+//			margin-top: 30px;
+//		}
+//	}
+//	.top-footer {
+//		text-align: center;
+//		.contact {
+//			float: none;
+//			display: inline-block;
+//			width: 100%;
+//			li {
+//				float: none;
+//				display: inline-block;
+//				margin: 10px 25px;
+//			}
+//		}
+//		.social {
+//			&.fr {
+//				display: inline-block;
+//				float: none;
+//				margin-top: 30px;
+//			}
+//		}
+//	}
+//}
+//
+//@media only screen and (max-width: 850px) {
+//	.top-hidden-menu {
+//		.menu-list {
+//			li {
+//				width: 100%;
+//				text-align: center;
+//			}
+//		}
+//	}
+//}
+//
+///*  Phone  : 480px */
+//@media only screen and (max-width: 767px) {
+//	.works {
+//		.work-box {
+//			.work-item {
+//				height: 300px;
+//				width: 50%;
+//			}
+//		}
+//	}
+//	.projects {
+//		text-align: center;
+//		.proj-item {
+//			width: 60%;
+//			margin: 0 auto;
+//			float: none;
+//			.img-box {
+//				img {
+//					display: block;
+//					width: 100%;
+//					height: auto;
+//				}
+//			}
+//		}
+//	}
+//	.request-modal {
+//		.grid-2 {
+//			width: 80%;
+//			position: absolute;
+//			background:transparent!important;
+//			left: 50%;
+//			@include transform(translateX(-50%));
+//			.center {
+//				padding: 0;
+//				.contact-block {
+//					position: absolute;
+//					bottom: 45px;
+//					&:nth-last-child(2){
+//						bottom: 0px !important;
+//					}
+//				}
+//			}
+//			h4 {
+//				position: absolute;
+//				font-size: 25px;
+//				top: -300px;
+//			}
+//			&:nth-child(1){
+//				top: 130px;
+//			}
+//			&:nth-child(2){
+//				.center {
+//					padding: 0;
+//				}
+//			}
+//
+//			.inp-file {
+//				padding-left: 0;
+//			}
+//			.btn-big {
+//				display: block;
+//			}
+//		}
+//	}
+//}
+//
+//@media only screen and (max-width: 568px){
+//	header {
+//		.top-box {
+//			text-align: center;
+//			.fl,.fr {
+//				float: none;
+//			}
+//			.top-menu {
+//				.menu {
+//					display: inline-block;
+//					li {
+//						margin: 0 15px;
+//					}
+//				}
+//			}
+//		}
+//	}
+//}
+//
+///* Phone  : 320px */
+//@media only screen and (max-width: 479px){
+//	.works {
+//		.work-box {
+//			.work-item {
+//				height: 300px;
+//				width: 100%;
+//				.work-logo {
+//					display: block !important;
+//				}
+//				.fon {
+//					visibility: visible;
+//				}
+//			}
+//		}
+//	}
+//}
+///*@media screen and (max-width: 600px)*/
+//
+///*
+//* END OF ADAPTIVE
+//*/

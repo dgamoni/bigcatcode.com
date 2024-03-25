@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
+
+@font-face {
+  font-family: 'ProximaLight';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ProximaNova-Light.woff') format('woff'),
+       url('../fonts/ProximaNova-Light.otf') format('truetype'),
+       url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaReg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/ProximaNova-Regular.woff') format('woff'),
+				 url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+				 url('../fonts/ProximaNova-Regular.svg#ProximaNova-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaBold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/ProximaNova-Bold.woff') format('woff'),
+				 url('../fonts/ProximaNova-Bold.otf') format('truetype'),
+				 url('../fonts/ProximaNova-Bold.svg#ProximaNova-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
