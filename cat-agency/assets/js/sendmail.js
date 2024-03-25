@@ -1,6 +1,8 @@
 var deco_agency = {
 	sendmail: function (o) {
-		var form = jQuery(o);
+		var form = jQuery('#reqform').find(':input');
+		//console.log(form);
+		//var form = jQuery(o);
 		var data = form.serialize();
 		var name = form.find('#field_name');
 		var email = form.find('#field_email');
@@ -34,5 +36,7 @@ var deco_agency = {
 			}
 		})
 
+		event.preventDefault();
+		return false; 
 	}
 }

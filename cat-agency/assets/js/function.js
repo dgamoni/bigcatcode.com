@@ -42,7 +42,7 @@
 				autoplay     : true,
 				lazyLoad: 'progressive',
 				// autoplay     : false,
-				autoplaySpeed: 3000
+				autoplaySpeed: 5000
 			});
 			setTimeout(function(){
 				$('header.navbar').animate({'height':'100vh', 'opacity':'1'},400);

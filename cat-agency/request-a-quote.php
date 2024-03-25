@@ -1,5 +1,7 @@
 <?php
 
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
+
 // Only process POST reqeusts.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// Get the form fields and remove whitespace.
@@ -36,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$email_headers = "From: $name <$email>";
 
 	// Send the email.
-	if (mail($recipient, $subject, $email_content, $email_headers)) {
+	if (wp_mail($recipient, $subject, $email_content, $email_headers)) {
 		// Set a 200 (okay) response code.
 		echo "Thank You! Your message has been sent.";
 	} else {

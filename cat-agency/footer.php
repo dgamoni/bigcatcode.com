@@ -5,19 +5,23 @@
 	<div class="wrapper">
 		<div class="top-footer">
 			<ul class="contact fl">
-				<li>
+<!-- 				<li>
 					<h5></h5>
 					<span class="address"  ></span>
 					<a class="phone" href="tel:"></a>
-				</li>
-				<li>
+				</li> -->
+<!-- 				<li>
 					<h5></h5>
 					<span class="address"  ></span>
 					<a class="phone" href="tel:"></a>
-				</li>
+				</li> -->
 				<li>
 					<h5>E-mail</h5>
 					<a class="mail" href="mailto:bigcatcode@gmail.com ">bigcatcode@gmail.com</a>
+				</li>
+				<li>
+					<h5>Skype</h5>
+					<a class="mail" href="skype:monothemes?chat">monothemes</a>
 				</li>
 			</ul>
 			<ul class="social fr">
@@ -68,18 +72,18 @@
 	<div class="grid-2">
 		<span class="close-modal"></span>
 		<div class="center">
-			<form class="request-form"  action="" onsubmit="sub()" method="POST" id="reqform">
+			<form class="request-form"  action="" onsubmit="return deco_agency.sendmail()" method="POST" id="reqform">
 				<div class="inp-wrap">
-					<input class="inp" name="name" type="text" placeholder="Name *" />
+					<input id="field_name" class="inp" name="name" type="text" placeholder="Name *" />
 				</div>
 				<div class="inp-wrap">
-					<input class="inp" name="email" type="email" required placeholder="E-mail *" />
+					<input id="field_email" class="inp" name="email" type="email" required placeholder="E-mail *" />
 				</div>
 				<div class="inp-wrap">
-					<input class="inp" name="site" type="text" placeholder="Site" />
+					<input id="field_site" class="inp" name="site" type="text" placeholder="Site" />
 				</div>
 
-				<textarea class="txtarea" name="message" id="" placeholder="My WordPress desire is ..."></textarea>
+				<textarea id="field_mes"  class="txtarea" name="message"  placeholder="My WordPress desire is ..."></textarea>
 
 <!--				<div class="inp-file">-->
 <!--					<input type="file" />-->
@@ -105,6 +109,7 @@
 <script src="<?php echo DECO_THEME_URI; ?>assets/vendors/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
 <script src="<?php echo DECO_THEME_URI; ?>assets/js/min/slick.min.js"></script>
 <script src="<?php echo DECO_THEME_URI; ?>assets/js/function.js"></script>
+<script src="<?php echo DECO_THEME_URI; ?>assets/js/sendmail.js"></script>
 <!-- endbower -->
 </body>
 </html>

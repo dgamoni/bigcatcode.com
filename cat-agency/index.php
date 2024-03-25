@@ -8,7 +8,7 @@
 			</div>
 
 			<div class="small-logo scroll_to" data-href="top">
-				<img src="<?php echo DECO_THEME_URI; ?>assets/image/logo_2018_small1.png" height="50" width="194" alt="Decollete" />
+				<img src="<?php echo DECO_THEME_URI; ?>assets/image/logo_2018_small1.png" height="50" width="194" alt="Bigcatcode" />
 			</div>
 		</div>
 		<div class="top-hidden-menu hidden">
@@ -33,8 +33,8 @@
 					<ul class="menu-list">
 						<!--<li><a data-href="aboutus" data-hover="Agency" class="current scroll_to" href="">Agency</a></li>-->
 						<li><a data-href="ourworks" data-hover="works" class="scroll_to" href="">works</a></li>
-						<li><a data-href="projects" data-hover="Projects" class="scroll_to" href="">Projects</a></li>
-						<!--<li><a data-href="testimonials" data-hover="Testimonials" class="scroll_to" href="">Testimonials</a></li>-->
+						<!-- <li><a data-href="projects" data-hover="Projects" class="scroll_to" href="">Projects</a></li> -->
+						<li><a data-href="aboutus" data-hover="Testimonials" class="scroll_to" href="">Testimonials</a></li>
 						<li><a data-href="contact" data-hover="Contacts" class="scroll_to" href="">Contacts</a></li>
 					</ul>
 				</div>
@@ -71,95 +71,13 @@
 
 					<div class="work-box spoil-content">
 						
-						<div class="work-item wow fadeInUp animated">
-							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/image/lednew.jpg" height="301" width="400" alt="">
-							<img class="work-logo image" src="<?php echo DECO_THEME_URI; ?>assets/image/logo_led_white.svg" alt="Led news">
+						<?php get_template_part( 'includes/portfolio', 'lednews' ); ?>
+						<?php get_template_part( 'includes/portfolio', 'joinup' ); ?>
+						<?php get_template_part( 'includes/portfolio', 'poputno' ); ?>
+						<?php get_template_part( 'includes/portfolio', 'galibelle' ); ?>
+						<?php get_template_part( 'includes/portfolio', 'girl' ); ?>
+						<?php get_template_part( 'includes/portfolio', 'sinevo' ); ?>
 
-							<div class="work-logo desc">
-								<span>Theme Development / Plugin Development</span>
-
-								<p class="big">lednews.ru</p>
-
-								<p>News of lighting technology, LED lighting</p>
-							</div>
-							<div class="fon fiolet"></div>
-							<!-- <a href="" target="_blank"></a> -->
-						</div>
-
-						<div class="work-item wow fadeInUp animated" data-wow-delay=".5s">
-							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/image/joinup-bg.jpg" height="301" width="400" alt="">
-							<img class="work-logo image" src="<?php echo DECO_THEME_URI; ?>assets/img/logoJoin.png" alt="Travel agency">
-
-							<div class="work-logo desc">
-								<span>Theme Development / Plugin Development</span>
-
-								<p class="big">JoinUp.ua</p>
-
-								<p>One of the biggest<br />ukrainian tour operator</p>
-							</div>
-							<div class="fon nature"></div>
-							<!-- <a href="#" target="_blank"></a> -->
-						</div>
-
-						<div class="work-item wow fadeInUp animated" data-wow-delay=".7s">
-							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/image/ts-bg.jpg" height="301" width="400" alt="">
-							<img class="work-logo image" src="<?php echo DECO_THEME_URI; ?>assets/image/logo_poputno.png" alt="">
-
-							<div class="work-logo desc">
-								<span>Theme Development / Plugin Development</span>
-
-								<p class="big">poputno.info</p>
-
-								<p>Site for independent travelers</p>
-							</div>
-							<div class="fon blue2"></div>
-							<!-- <a href="#" target="_blank"></a> -->
-						</div>
-
-						<div class="work-item wow fadeInUp animated" data-wow-delay=".3s">
-							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/image/preview_gall.jpg" height="301" width="400" alt="">
-							<img class="work-logo image" src="<?php echo DECO_THEME_URI; ?>assets/image/logo_big_gall.png">
-
-							<div class="work-logo desc">
-								<span>Theme Development / Plugin Development</span>
-
-								<p class="big">galibelle.com</p>
-
-								<p>Famous Brazilian shoes brand</p>
-							</div>
-							<div class="fon gall"></div>
-							<!-- <a href="" target="_blank"></a> -->
-						</div>
-
-						<div class="work-item wow fadeInUp animated">
-							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/image/pre_girl.png" height="301" width="400" alt="">
-							<img class="work-logo image" src="<?php echo DECO_THEME_URI; ?>assets/image/logo_girl_white2.png" alt="">
-
-							<div class="work-logo desc">
-								<span>Theme Development / Plugin Development</span>
-
-								<p class="big">girlsintech.org</p>
-
-								<p>Women. Technology. Entrepreneurship.</p>
-							</div>
-							<div class="fon girl_tech"></div>
-							<!-- <a href="" target="_blank"></a> -->
-						</div>
-
-						<div class="work-item wow fadeInUp animated" data-wow-delay=".7s">
-							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/image/preview_sinevo.png" height="301" width="400" alt="">
-							<img class="work-logo image" src="<?php echo DECO_THEME_URI; ?>assets/image/logo-sinevo.png" alt="">
-
-							<div class="work-logo desc">
-								<span>Theme Development / Plugin Development</span>
-
-								<p class="big">konkurs.synevo.ua</p>
-
-								<p>The "Mind Games" competition for the Synevo Laboratory</p>
-							</div>
-							<div class="fon blue"></div>
-							<!-- <a href="#" target="_blank"></a> -->
-						</div>
 
 <!-- 						<div class="work-item wow fadeInUp animated">
 							<img class="work-fon" src="<?php echo DECO_THEME_URI; ?>assets/img/port7.jpg" height="301" width="400" alt="">
@@ -267,7 +185,7 @@
 		</div>
 	</section>
 
-	
+
 
 <section class="testim" id="testim" data-id="aboutus">
 	<div class="wrapper">

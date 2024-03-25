@@ -31,7 +31,7 @@ function deco_sendmail() {
 </body>
 </html>";
 	$headers = "Content-type: text/html, charset=utf8 \r\n";
-	$headers .= "From: " . str_replace( 'https://', '', get_bloginfo( 'url' ) ) . " <noreply@" . str_replace( 'http://', '', get_bloginfo( 'url' ) ) . ">\r\n";
+	$headers .= "From: " . str_replace( 'http://', '', get_bloginfo( 'url' ) ) . " <noreply@" . str_replace( 'http://', '', get_bloginfo( 'url' ) ) . ">\r\n";
 
 	add_filter( 'wp_mail_content_type', create_function( '', 'return "text/html";' ) );
 

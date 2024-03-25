@@ -15,7 +15,7 @@
 	<meta property="og:description" content="WordPress Experts At Your Service">
 
 	<meta name="title" content="bigcatcode">
-	<meta name="description" content="We help clients across the world achieve success through high-quality, innovative & creative design work" />
+	<meta name="description" content="We are small a team of freelancers from Ukraine, we can help embody any desire for WordPress" />
 	<meta name="keywords" content="Bigcatcode, high-quality, wordpress service" />
 	<meta name="robots" content="index, follow" />
 	<meta name="author" content="bigcatcode" />
@@ -41,7 +41,7 @@
 	<div class="top-box">
 		<div class="container">
 			<a href="/" class="fl">
-				<img src="<?php echo DECO_THEME_URI; ?>assets/img/logo_2018_3.png" height="57" width="213" alt="Bigcatcode" />
+				<img src="<?php echo DECO_THEME_URI; ?>assets/image/logo_2018_3.png" height="57" width="213" alt="Bigcatcode" />
 			</a>
 			<!--<button class="btn fr">En</button>-->
 			<!--<div class="lang">-->
